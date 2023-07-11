@@ -211,7 +211,7 @@ def main(win, width):
             if event.type == pygame.QUIT:
                 run = False
 
-            if pygame.mouse.get_pressed()[0]:  # LEFT - Places Grid markes & Barriers
+            if pygame.mouse.get_pressed()[0]:  # LEFT - Places Grid markers & Barriers
                 pos = pygame.mouse.get_pos()
                 row, col = get_clicked_pos(pos, ROWS, width)
                 spot = grid[row][col]
@@ -226,7 +226,7 @@ def main(win, width):
                 elif spot != end and spot != start:
                     spot.make_barrier()
 
-            elif pygame.mouse.get_pressed()[2]:  # RIGHT = Erases the chosen grid input
+            elif pygame.mouse.get_pressed()[2]:  # RIGHT - Erases the chosen grid input
                 pos = pygame.mouse.get_pos()
                 row, col = get_clicked_pos(pos, ROWS, width)
                 spot = grid[row][col]
